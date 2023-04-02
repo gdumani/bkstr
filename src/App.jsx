@@ -1,17 +1,18 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
 import NavBar from './components/NavBar';
-import Books from './pages/Books';
 import Categories from './pages/Categories';
+import Books from './pages/Books';
 
 const App = () => (
-  <BrowserRouter>
+  <Router>
+    <NavBar />
     <Routes>
-      <NavBar />
       <Route path="/" element={<Books />} />
       <Route path="/categories" element={<Categories />} />
     </Routes>
-  </BrowserRouter>
+  </Router>
 );
 
 export default App;
