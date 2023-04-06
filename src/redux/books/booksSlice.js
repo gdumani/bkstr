@@ -1,15 +1,37 @@
-import { createSlice } from '@reduxjs/toolkit'
+import { createSlice } from '@reduxjs/toolkit';
 
-const initialState = {
-
-}
+const initialState = [
+  {
+    id: '1',
+    title: 'The Hunger Game',
+    author: 'Suzanne Collins',
+    category: 'action',
+  },
+  {
+    id: '2',
+    title: 'Dune',
+    author: 'Frank Herbert',
+    category: 'science fiction',
+  },
+  {
+    id: '3',
+    title: 'Capital in the Twenty-First Century',
+    author: 'Suzanne Collins',
+    category: 'economy',
+  },
+];
 
 const booksSlice = createSlice({
-  name: second,
+  name: 'books',
   initialState,
-  reducers: {}
+  reducers: {
+    addBook: (state, action) => [...state, action.payload],
+    removeBook: (state, action) => {
+      [...state].filter((book) => book.id !== action.payload);
+    },
+  },
 });
 
-export const {} = booksSlice.actions
+export const { addBook, removeBook } = booksSlice.actions;
 
-export default booksSlice.reducer
+export default booksSlice.reducer;
