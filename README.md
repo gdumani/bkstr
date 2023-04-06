@@ -68,6 +68,7 @@ The app was developed using React js, JavaScript and CSS
 - **[Display a list of books with a remove button]**
 - **[Display a form to add new books]**
 - **[Display a navbar so select between Categories and Books pages ]**
+- **[Include Redux reducers and actions]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -139,11 +140,9 @@ To run the project, execute the following command:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-> Describe 1 - 3 features you will add to the project.
-
-- **[Add reducers and actions]**
 - **[Use Redux in React components]**
 - **[Connect to API]**
+- **[Add styling css]**
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- CONTRIBUTING -->
