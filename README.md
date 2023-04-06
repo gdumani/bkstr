@@ -106,7 +106,7 @@ Install this project with:
 
 ```sh
   cd bkstr
-  git checkout init
+  git checkout actions
   git pull
   npm install
 
