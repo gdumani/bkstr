@@ -2,22 +2,22 @@ import { createSlice } from '@reduxjs/toolkit';
 
 const initialState = [
   {
-    id: '1',
-    title: 'The Hunger Game',
-    author: 'Suzanne Collins',
-    category: 'action',
+    item_id: 'item1',
+    title: 'The Great Gatsby',
+    author: 'John Smith',
+    category: 'Fiction',
   },
   {
-    id: '2',
-    title: 'Dune',
-    author: 'Frank Herbert',
-    category: 'science fiction',
+    item_id: 'item2',
+    title: 'Anna Karenina',
+    author: 'Leo Tolstoy',
+    category: 'Fiction',
   },
   {
-    id: '3',
-    title: 'Capital in the Twenty-First Century',
-    author: 'Suzanne Collins',
-    category: 'economy',
+    item_id: 'item3',
+    title: 'The Selfish Gene',
+    author: 'Richard Dawkins',
+    category: 'Nonfiction',
   },
 ];
 
