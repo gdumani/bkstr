@@ -9,7 +9,7 @@ const Booklist = () => {
       <ul>
         {books.map((book) => {
           const {
-            id, title, author, category,
+            item_id: id, title, author, category,
           } = book;
           return (
             <Book
