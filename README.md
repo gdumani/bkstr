@@ -65,10 +65,9 @@ The app was developed using React js, JavaScript and CSS
 
 > Describe between 1-3 key features of the application.
 
-- **[Display a list of books with a remove button]**
-- **[Display a form to add new books]**
+- **[Display a list of books with a remove button with add new book form]**
 - **[Display a navbar so select between Categories and Books pages ]**
-- **[Include Redux reducers and actions]**
+- **[Include Redux reducers and actions and apply them in reusable components]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -107,7 +106,7 @@ Install this project with:
 
 ```sh
   cd bkstr
-  git checkout actions
+  git checkout redux
   git pull
   npm install
 
@@ -140,7 +139,6 @@ To run the project, execute the following command:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- **[Use Redux in React components]**
 - **[Connect to API]**
 - **[Add styling css]**
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
