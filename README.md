@@ -106,7 +106,7 @@ Install this project with:
 
 ```sh
   cd bkstr
-  git checkout redux
+  git checkout api
   git pull
   npm install
 
