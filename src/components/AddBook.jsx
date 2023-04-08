@@ -14,12 +14,13 @@ const Addbook = () => {
   const handleClick = (e) => {
     e.preventDefault();
     const newBook = {
-      id: v4(), title, author: 'author', category,
+      id: v4(), title, author, category,
     };
     if (title !== '' && category !== 'Category') {
       dispatch(addBook(newBook));
     }
     setTitle('');
+    setAuthor('');
     setCategory('Category');
   };
   return (
