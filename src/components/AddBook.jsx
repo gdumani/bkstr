@@ -20,6 +20,7 @@ const Addbook = () => {
       dispatch(addBook(newBook));
     }
     setTitle('');
+    setAuthor('');
     setCategory('Category');
   };
   return (

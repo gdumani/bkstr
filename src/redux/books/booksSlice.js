@@ -12,28 +12,34 @@ export const getBooks = createAsyncThunk('books/getBooks', async () => {
   );
   return response;
 });
+export const addBook = createAsyncThunk('books/addBook', async (payload) => {
+  const {
+    id, title, author, category,
+  } = payload;
+  await axios.post(API_URL, {
+    item_id: id, title, author, category,
+  });
+  return payload;
+});
+
+export const removeBook = createAsyncThunk('books/removeBook', async (payload) => {
+  const { id } = payload;
+  await axios.delete(`${API_URL}${id}`);
+  return payload;
+});
 
 const booksSlice = createSlice({
   name: 'books',
   initialState,
   reducers: {
-    addBook: (state, action) => {
-      const newBook = {
-        id: action.payload.id,
-        title: action.payload.title,
-        author: action.payload.author,
-        category: action.payload.category,
-      };
-      return [...state, newBook];
-    },
     removeBook: (state, action) => [...state].filter((book) => book.id !== action.payload),
   },
   extraReducers(builder) {
-    builder
-      .addCase(getBooks.fulfilled, (state, action) => action.payload);
+    builder.addCase(getBooks.fulfilled, (state, action) => action.payload);
+    builder.addCase(addBook.fulfilled, (state, action) => [...state, action.payload]);
   },
 });
 
-export const { addBook, removeBook } = booksSlice.actions;
+// export const { removeBook } = booksSlice.actions;
 
 export default booksSlice.reducer;
