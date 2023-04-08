@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { v4 } from 'uuid';
 import { addBook } from '../redux/books/booksSlice';
+import '../style/addbook.css';
 
 const Addbook = () => {
   const tempCats = ['Action', 'Science Fiction', 'Economy', 'Other'];
@@ -24,7 +25,7 @@ const Addbook = () => {
     setCategory('Category');
   };
   return (
-    <div>
+    <div className="addform">
       <h3>ADD NEW BOOK</h3>
       <form onSubmit={handleClick}>
         <input type="text" placeholder="Book Title" value={title} onChange={({ target }) => setTitle(target.value)} />
