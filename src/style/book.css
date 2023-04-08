@@ -1,0 +1,108 @@
+.BookClass {
+  font-family: 'Roboto Slab', serif;
+  font-weight: 300;
+  display: flex;
+  width: 90%;
+  background-color: white;
+  margin: auto;
+  margin-bottom: 0.5rem;
+  justify-content: space-between;
+  justify-self: center;
+  padding-bottom: 1rem;
+}
+
+.book {
+  width: 40%;
+  padding-left: 1.5rem;
+}
+
+.book h3 {
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.book h4 {
+  font-size: 1.375rem;
+  margin: 0;
+}
+
+.book h6,
+button {
+  color: #4386bf;
+  border: none;
+}
+
+.book h6 {
+  padding: 0;
+  margin-top: 0;
+}
+
+.comm-ed {
+  padding: 0;
+}
+
+.remove {
+  background: none;
+  border-right: solid 1px #e8e8e8;
+  border-left: solid 1px #e8e8e8;
+  padding: 0 1rem;
+}
+
+.book h5,
+.ChapterLbl {
+  opacity: 0.5;
+  font-family: 'Montserrat', sans-serif;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.progress {
+  padding-right: 2rem;
+  padding-top: 1rem;
+}
+
+.ChapterLbl {
+  text-transform: uppercase;
+  font-size: 0.813rem;
+  color: #121212;
+}
+
+.chapter {
+  font-size: 1rem;
+}
+
+.graph {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+}
+
+.percent {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+.pie {
+  width: 70px;
+  height: 70px;
+  border-radius: 3rem;
+  border: 5px solid #3487e7;
+  border-right: 5px solid #ddd;
+  transform: rotate(225deg);
+  margin: 0 2rem;
+}
+
+.progBtn {
+  background-color: #0290ff;
+  color: white;
+  border: none;
+  padding: 0.5rem;
+  border-radius: 3px;
+}
