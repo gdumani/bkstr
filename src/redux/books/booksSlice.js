@@ -35,7 +35,7 @@ const booksSlice = createSlice({
     builder.addCase(getBooks.fulfilled, (state, action) => action.payload);
     builder.addCase(addBook.fulfilled, (state, action) => [...state, action.payload]);
     builder.addCase(removeBook.fulfilled, (state, action) => (
-      [...state].filter((book) => book.id !== action.payload)));
+      state.filter((book) => book.id !== action.payload)));
   },
 });
 export default booksSlice.reducer;
