@@ -1,3 +1,39 @@
 .nav {
   display: flex;
+  background-color: white;
+  padding: 1.2rem;
+  width: 95%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav ul {
+  display: flex;
+  list-style: none;
+  color: #444;
+  text-transform: uppercase;
+  align-items: center;
+  font-size: 0.83rem;
+}
+
+.nav li {
+  padding-right: 2rem;
+}
+
+.title {
+  font-size: 1.875rem;
+  padding-left: 5rem;
+  font-weight: bold;
+  color: #0290ff;
+  opacity: 1;
+}
+
+.nav img {
+  height: 1rem;
+  align-items: center;
+  padding: 1rem;
+  border: solid #0290ff;
+  border-width: 2px;
+  border-radius: 50%;
+  margin-right: 3rem;
 }
